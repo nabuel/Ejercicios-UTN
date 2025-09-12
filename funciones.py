@@ -1,7 +1,7 @@
 '''
 #Punto 1.
 
-def solicitar_entero() : 
+def solicitar_entero() -> None: 
     ''
     Solicita un número entero y lo muestra por consola.
 
@@ -15,7 +15,7 @@ def solicitar_entero() :
     
 #Punto 2.
 
-def solicitar_flotante() : 
+def solicitar_flotante() -> float: 
     ''
     Solicita un número flotante y lo muestra por consola.
 
@@ -28,7 +28,7 @@ def solicitar_flotante() :
     return(numero)
 
 #Punto 3.
-def solicitar_cadena():
+def solicitar_cadena() -> str:
     ''
     Solicita una cadena de texto y lo muestra por consola.
 
@@ -79,7 +79,3 @@ print(calcular_area_del_ciculo(radio_circulo))
 
 
 '''
-
-
-
-
