@@ -325,9 +325,4 @@ def get_string(longitud: int) -> str|None:
     if len(texto) == longitud:
         return texto
     else:
-        while len(texto) != longitud:
-            print(f"Cantidad de caracteres superior o menor a {longitud}.")
-            texto = input(f"Ingrese un texto de {longitud} caracteres: ")
-        
-        if len(texto) == longitud:
-            return texto
+            return None

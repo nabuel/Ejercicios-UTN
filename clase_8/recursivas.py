@@ -6,7 +6,7 @@ def sumar_naturales(numero: int)->int:
     else:
         return numero + sumar_naturales(numero - 1)
 
-print(sumar_naturales(5))
+# print(sumar_naturales(5))
 
 #Punto 2.
 def calcular_potencia(base: int, exponente: int)->int:
@@ -16,7 +16,7 @@ def calcular_potencia(base: int, exponente: int)->int:
         resultado = calcular_potencia(base, exponente - 1) * base
     return resultado
 
-print(calcular_potencia(4,3))
+# print(calcular_potencia(4,3))
 
 #Punto 3.
 def sumar_digitos(numero: int) ->int:
@@ -37,4 +37,4 @@ def calcular_fibonacci(numero: int)->int:
     else:
         return calcular_fibonacci(numero - 1) + calcular_fibonacci(numero - 2)
 
-print(calcular_fibonacci(10))
+# print(calcular_fibonacci(10))
