@@ -1,4 +1,4 @@
-import Input
+from Utilidades import Input
 
 
 #Punto 1.

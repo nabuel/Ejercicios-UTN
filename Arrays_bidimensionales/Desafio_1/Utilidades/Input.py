@@ -1,4 +1,4 @@
-import Validate
+from Utilidades import Validate
 
 def get_int(minimo: int,
             maximo: int,
