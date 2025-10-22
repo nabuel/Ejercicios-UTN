@@ -242,7 +242,6 @@ def calcular_diferencia(conjunto_1: list,
     diferencia = crear_array(len(conjunto_1))
 
     z = 0
-
     for i in range(len(conjunto_1)):
 
         bandera = True

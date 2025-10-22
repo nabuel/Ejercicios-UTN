@@ -1,7 +1,7 @@
 import funciones
-planilla = [[1,2,3,4],
-            [0,23,2,1],
-            [1,2,3,6]]
+planilla = [[0,0,0,0],
+            [0,0,0,0],
+            [0,0,0,0]]
 
 salones = ["Puerto Madero", "Palermo", "San Telmo"]
 eventos = ["cumpleaños", "casamientos", "fiestas de 15", "bodas de oro"]

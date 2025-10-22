@@ -1,0 +1,45 @@
+import Funciones
+muestra_encontrada = "CGTTTAATG"
+
+sospechosos = [
+    "Juan Pérez", "María Rodríguez", "Carlos Sánchez", "Ana Gómez", "Luis Ramírez", "Sofía Herrera", "Pedro Jiménez", "Laura Castro", "Miguel Torres", "Carmen Díaz",
+    "Ricardo Morales", "Elena Vargas", "Javier Navarro", "Patricia Suárez", "Gustavo Blanco", "Verónica Méndez", "Martín Silva", "Lucía Rojas", "Fernando Ibarra", "Silvia Ortega",
+    "Hugo Figueroa", "Andrea Cabrera", "Diego Pérez", "Valeria Fuentes", "Emiliano Soto", "Rosa Martínez", "Guillermo Peralta", "Natalia Medina", "Oscar Domínguez", "Daniela Guzmán",
+    "Alberto Salazar", "Monica Estrada", "Francisco León", "Gabriela Núñez", "Raúl Espinoza", "Beatriz Valencia", "Rodrigo Castaño", "Camila Soto", "Sebastián Aguirre", "Paula Araya",
+    "Matías Paredes", "Adriana Flores", "Ignacio Cortés", "Esteban Ruiz", "Florencia Godoy", "Cristian Orozco", "Juliana Peña", "Federico Miranda", "Gloria Sandoval", "Héctor Farias"
+]
+
+muestras = [
+    "CGGGGCTAAAATTTTTTACGATCGGCGTTAGCTAGCTAGCGATGCGTACGTTAGCTAGC", 
+    "AACGTTTAATGTTCTAAGCTGCGAGCTAGTACGTTAGCGTATCGTACGATCGTATGCTACG", 
+    "CGGGGCTAAAATTTTTTACGATCGTATCGTAGCTGATCGTACGTAGCTAGCTAGCTACGTG",
+    "ATGCTAGCTGCTAGCTGCTGATGCTAGCTGCTAGCTAGTCGATCGTAGCTAGCTAGCTAGC",
+    "GCTAGCTGATCGTACGTAGCTGCTAGCTGCTAGCTGCTAGTAGCTAGTGCAGTGCAGTAGC",
+    "TGCATGCTAGCTGATCGTAGCTAGCTAGCTGCTAGCTGCTAGCTGCTAGCTGCTGATGCAT",
+    "CGATCGTAGCTGATCGTACGTAGCTAGCTGCTGCTAGCTAGCTAGCTGCTGATCGTACGTG",
+    "AGCTGATCGTACGTAGCTAGCTGCTAGCTGCTGCTGCTAGCTGCTAGCTAGCTAGCTAGCT",
+    "GATCGTAGCTGATCGTACGTAGCTGCTAGCTGCTGCTGCTAGCTAGCTAGCTAGCTAGCTA",
+    "TAGCTGATCGTACGTAGCTAGCTGCTAGCTGCTAGCTGCTAGCTAGCTAGCTAGCTAGCTA",
+    "CTGATCGTAGCTGATCGTACGTAGCTAGCTGCTGCTAGCTGCTAGCTGCTAGCTAGCTAGC",
+    "GATCGTAGCTGATCGTACGTAGCTAGCTGCTAGCTGCTAGCTGCTAGCTAGCTAGCTAGCT",
+    "ATCGTAGCTGATCGTACGTAGCTGCTAGCTGCTGCTAGCTAGCTAGCTAGCTAGCTAGCTA",
+    "GCTAGCTGATCGTACGTAGCTAGCTGCTAGCTGCTAGCTGCTAGCTAGCTAGCTAGCTAGC",
+    "TACGTAGCTGATCGTACGTAGCTAGCTGCTAGCTGCTAGCTGCTAGCTAGCTAGCTAGCTA",
+    "CGTACGTAGCTGATCGTACGTAGCTAGCTGCTAGCTGCTAGCTGCTAGCTAGCTAGCTAGC",
+    "GCTAGCTGATCGTACGTAGCTAGCTGCTAGCTGCTAGCTGCTAGCTAGCTAGCTAGCTAGC",
+    "ATGCTAGCTGCTAGCTGCTGATGCTAGCTGCTAGCTAGTCGATCGTAGCTAGCTAGCTAGC",
+    "AGCTAGCTAGCTGATCGTAGCTGCTAGCTGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTA",
+    "CTAGCTGATCGTACGTAGCTAGCTGCTAGCTGCTAGCTGCTAGCTAGCTAGCTAGCTAGCT"
+]
+
+
+hay_culpable = False
+for i in range(len(muestras)):
+    if Funciones.buscar_subcadena(muestras[i], muestra_encontrada):
+        hay_culpable = True
+        break
+
+if hay_culpable:
+    print(f"El culpable es {sospechosos[i]}")
+else:
+    print("Son todos innocentes.")
